@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Iniciar Sesion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Log In</ion-title>
+      </ion-toolbar>
+      <ion-progress-bar [value]="progress"></ion-progress-bar>
+    </ion-card-header>
+  
+    <ion-card-content>
+
+        <ion-item>
+          <ion-input [(ngModel)]="correo" label="Correo" labelPlacement="floating" placeholder="Enter your email" type="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input [(ngModel)]="clave" label="Contraseña" labelPlacement="floating" placeholder="Enter your password" type="password"></ion-input>
+        </ion-item>
+
+        <ion-row>
+          <ion-col>
+            <ion-button [routerLink]="['/forgot-password']" class="small-text" color="dark" fill="clear" expand="block">¿Has olvidado la contraseña?</ion-button>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <ion-button color="success" expand="block" (click)="PasarDatos()">Iniciar Sesion</ion-button>
+          </ion-col>
+        </ion-row>
+ 
+      <ion-row>
+        <ion-col>
+          <ion-button [routerLink]="['/register']" expand="block">Crear Cuenta</ion-button>
+        </ion-col>
+      </ion-row>
+
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>
+

@@ -1,0 +1,26 @@
+ion-menu-button {
+    color: var(--ion-color-primary);
+  }
+
+ion-content {
+    --background: black;
+}
+
+ion-header {
+  --background: skyblue;
+}
+
+ion-item{
+  p{
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+}
+
+ion-card-title{
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
